@@ -63,7 +63,7 @@ Header: "x-auth-key => Zioj23D92j2kGf9D"
 ```
 
 
-## Files worked on:
+## Files worked on
 ##### Http
 - TransactionController.php
 - WalletController.php
