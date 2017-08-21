@@ -51,11 +51,13 @@ Request body: (JSON body)
 ##### Get a wallet and three of the most recent transactions by a specific email
 ```
 URL: GET api/admin/wallet/{email}
+Content-Type: application/json
 ```
 
 ##### Delete a wallet by a specific email
 ```
 URL: DELETE api/admin/wallet/{email}
+Content-Type: application/json
 ```
 
 
