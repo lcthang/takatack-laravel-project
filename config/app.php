@@ -103,6 +103,10 @@ return [
     |
     */
 
+    /*
+     * Author: Le Cong Thang
+     */
+
     'auth_key' => env('AUTH_KEY'),
 
     'key' => env('APP_KEY'),
