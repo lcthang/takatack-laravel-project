@@ -14,12 +14,12 @@
 ## Public APIs
 ##### Get a wallet detail and its transactions of the only email john@wallet.io
 ```
-URL: GET /wallet
+URL: GET api/wallet
 ```
 
 ##### Create a transaction for the only email john@wallet.io
 ```
-URL: POST /wallet/transaction
+URL: POST api/wallet/transaction
 Content-Type: application/json
 ```
 
@@ -37,7 +37,7 @@ Request body: (JSON body)
 ## Admin APIs
 ##### Create a new wallet
 ```
-URL: POST /admin/wallet
+URL: POST api/admin/wallet
 Content-Type: application/json
 Header: "x-auth-key => Zioj23D92j2kGf9D"
 ```
@@ -50,15 +50,16 @@ Request body: (JSON body)
 
 ##### Get a wallet and three of the most recent transactions by a specific email
 ```
-URL: GET /admin/wallet/{email}
+URL: GET api/admin/wallet/{email}
 ```
 
 ##### Delete a wallet by a specific email
 ```
-URL: DELETE /admin/wallet/{email}
+URL: DELETE api/admin/wallet/{email}
 ```
 
-##### Files worked on:
+
+## Files worked on:
 Http:
 - TransactionController.php
 - WalletController.php

@@ -32,11 +32,16 @@ class TransactionController extends Controller
 			return $arr;
 		}
 
+		if($request->input('amount') <= 0) {
+			$arr = array('message' => 'Invalid amount of credits');
+			return $arr;	
+		}
+
 		DB::table('transactions')->insert([
- 			'wallet_id' => $wallet->id,
  			'type' =>$request->input('type'),
  			'amount' => $request->input('amount'),
  			'remarks' =>  $request->input('remarks'),
+ 			'wallet_id' => $wallet->id,
  			'created_at' => Carbon::now()->toDateTimeString(),
 			'updated_at' => Carbon::now()->toDateTimeString(),
  		]);

@@ -20,7 +20,7 @@ class CreateTransactionsTable extends Migration
             $table->increments('id');
             $table->decimal('amount', 5, 2)->default(0);
             $table->string('type');
-            $table->string('remarks')->nullable();
+            $table->text('remarks')->nullable();
             $table->integer('wallet_id')->unsigned();
             $table->foreign('wallet_id')->references('id')->on('wallets')->onDelete('cascade');
             $table->timestamps();
