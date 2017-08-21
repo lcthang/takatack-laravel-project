@@ -9,6 +9,7 @@
 
 ## Configuration
 - Database connection is on port 3307
+- Application runs on port 8000
 
 ## Public APIs
 ##### Get a wallet detail and its transactions of the only email john@wallet.io
@@ -26,7 +27,8 @@ Content-Type: application/json
 Request body: (JSON body)
 {
 	"type": "credit",
-	"amount": 0
+	"amount": 0,
+	"remarks": "test remarks"
 }
 
 "type" is either "credit" (adding) or "debit" (deducting)

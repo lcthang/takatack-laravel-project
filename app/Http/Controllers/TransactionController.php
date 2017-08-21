@@ -36,6 +36,7 @@ class TransactionController extends Controller
  			'wallet_id' => $wallet->id,
  			'type' =>$request->input('type'),
  			'amount' => $request->input('amount'),
+ 			'remarks' =>  $request->input('remarks'),
  			'created_at' => Carbon::now()->toDateTimeString(),
 			'updated_at' => Carbon::now()->toDateTimeString(),
  		]);
