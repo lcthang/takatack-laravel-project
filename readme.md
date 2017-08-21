@@ -52,12 +52,14 @@ Request body: (JSON body)
 ```
 URL: GET api/admin/wallet/{email}
 Content-Type: application/json
+Header: "x-auth-key => Zioj23D92j2kGf9D"
 ```
 
 ##### Delete a wallet by a specific email
 ```
 URL: DELETE api/admin/wallet/{email}
 Content-Type: application/json
+Header: "x-auth-key => Zioj23D92j2kGf9D"
 ```
 
 
