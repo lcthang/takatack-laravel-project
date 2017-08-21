@@ -64,7 +64,7 @@ Header: "x-auth-key => Zioj23D92j2kGf9D"
 
 
 ## Files worked on:
-Http:
+##### Http
 - TransactionController.php
 - WalletController.php
 - AdminMiddleware.php
@@ -72,15 +72,15 @@ Http:
 - Transaction.php
 - Wallet.php
 
-Config:
+##### Config
 - app.php
 - database.php
 
-Database:
+##### Database
 - Design schema for "wallets" and "transactions" table
 - Create seeds for john@wallet.io & its transactions
 
-Routes:
+##### Routes
 - api.php
 
 - Change .env
